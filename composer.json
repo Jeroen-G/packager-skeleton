@@ -24,7 +24,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\Tests\\": "tests"
+            ":uc:vendor\\:uc:package_name\\Tests\\": "tests"
         }
     },
     "extra": {
