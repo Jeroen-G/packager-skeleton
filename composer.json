@@ -1,5 +1,5 @@
 {
-    "name": ":lc:vendor/:lc:package_name",
+    "name": ":lc:vendor/:lc:package",
     "description": ":description",
     "license": ":license",
     "authors": [
@@ -9,8 +9,8 @@
             "homepage": ":author_homepage"
         }
     ],
-    "homepage": "https://github.com/:lc:vendor/:lc:package_name",
-    "keywords": ["Laravel", ":uc:package_name"],
+    "homepage": "https://github.com/:lc:vendor/:lc:package",
+    "keywords": ["Laravel", ":uc:package"],
     "require": {
         "illuminate/support": "~5"
     },
@@ -19,21 +19,21 @@
     },
     "autoload": {
         "psr-4": {
-            ":uc:vendor\\:uc:package_name\\": "src/"
+            ":uc:vendor\\:uc:package\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":uc:vendor\\:uc:package_name\\Tests\\": "tests"
+            ":uc:vendor\\:uc:package\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                ":uc:vendor\\:uc:package_name\\:uc:package_nameServiceProvider"
+                ":uc:vendor\\:uc:package\\:uc:packageServiceProvider"
             ],
             "aliases": {
-                ":uc:package_name": ":uc:vendor\\:uc:package_name\\Facades\\:uc:package_name"
+                ":uc:package": ":uc:vendor\\:uc:package\\Facades\\:uc:package"
             }
         }
     }
