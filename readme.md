@@ -54,4 +54,4 @@ If you discover any security related issues, please email :author_email instead 
 [link-travis]: https://travis-ci.org/:lc:vendor/:lc:package
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/:lc:vendor
-[link-contributors]: ../../contributors]
+[link-contributors]: ../../contributors
