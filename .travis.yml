@@ -1,8 +1,7 @@
 language: php
 
 php:
-  - 7.0
-  - 7.1
+  - 7.2
 
 cache:
   directories:
@@ -11,8 +10,7 @@ cache:
 # Using Testbench you can test for different Laravel versions.
 # The settings below test on each PHP version Laravel 5.4 and 5.5.
 env:
- - TESTBENCH_VERSION=3.4.*
- - TESTBENCH_VERSION=3.5.*
+ - TESTBENCH_VERSION=4.*
 
 before_script:
   - travis_retry composer self-update
