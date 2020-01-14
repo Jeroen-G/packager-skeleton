@@ -1,6 +1,6 @@
 {
     "name": ":lc:vendor/:lc:package",
-    "description": ":description",
+    "description": ":package_description",
     "license": ":license",
     "authors": [
         {
