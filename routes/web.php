@@ -10,6 +10,3 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/users/{username}', 'UsersController@show')->name('package.adaptcms.users.show');
-Route::get('/users', 'UsersController@index')->name('package.adaptcms.users.index');

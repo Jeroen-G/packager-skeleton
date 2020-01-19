@@ -55,3 +55,10 @@ If you discover any security related issues, please email :author_email instead 
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/:lc:vendor
 [link-contributors]: ../../contributors
+
+## AdaptCMS - UI
+
+#### Include layout in Vue page view
+
+```import Layout from '../../../../../adaptcms/base/ui/layouts/main'``
+```layout: (h, page) => h(Layout, [ page ]),```
