@@ -60,5 +60,5 @@ If you discover any security related issues, please email :author_email instead 
 
 #### Include layout in Vue page view
 
-```import Layout from '../../../../../adaptcms/base/ui/layouts/main'``
+```import Layout from '../../../../../adaptcms/base/ui/layouts/layout'``
 ```layout: (h, page) => h(Layout, [ page ]),```
