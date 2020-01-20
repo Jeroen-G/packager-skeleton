@@ -10,3 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get(
+  '/packages/:lc:vendor/:lc:package/sample',
+  '\\:uc:vendor\\:uc:package\\Http\\Controllers\\SamplesController@sample'
+)->name('packages.:lc:vendor.:lc:package.sample');

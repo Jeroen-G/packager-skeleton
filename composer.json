@@ -1,43 +1,47 @@
 {
-    "name": ":lc:vendor/:lc:package",
-    "description": ":package_description",
-    "license": ":license",
-    "authors": [
-        {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_homepage"
-        }
-    ],
-    "homepage": "https://github.com/:lc:vendor/:lc:package",
-    "keywords": ["Laravel", ":uc:package"],
-    "require": {
-        "illuminate/support": "~5|~6"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.0",
-        "mockery/mockery": "^1.1",
-        "orchestra/testbench": "~3|~4",
-        "sempro/phpunit-pretty-print": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            ":uc:vendor\\:uc:package\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            ":uc:vendor\\:uc:package\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                ":uc:vendor\\:uc:package\\:uc:packageServiceProvider"
-            ],
-            "aliases": {
-                ":uc:package": ":uc:vendor\\:uc:package\\Facades\\:uc:package"
-            }
-        }
+  "name": ":lc:vendor/:lc:package",
+  "description": ":uc:vendor :uc:package",
+  "license": ":license",
+  "authors": [
+    {
+      "name": ":author_name",
+      "email": ":author_email",
+      "homepage": "https://www.adaptcms.com/packages/:lc:vendor/:lc:package"
     }
+  ],
+  "homepage": "https://github.com/:lc:vendor/:lc:package",
+  "keywords": [
+    "Laravel",
+    ":uc:vendor",
+    ":uc:package"
+  ],
+  "require": {
+    "illuminate/support": "~6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "^1.1",
+    "orchestra/testbench": "~3|~4",
+    "sempro/phpunit-pretty-print": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      ":uc:vendor\\:uc:package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      ":uc:vendor\\:uc:package\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        ":uc:vendor\\:uc:package\\:uc:packageServiceProvider"
+      ],
+      "aliases": {
+        ":uc:package": ":uc:vendor\\:uc:package\\Facades\\:uc:package"
+      }
+    }
+  }
 }
