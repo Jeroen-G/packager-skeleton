@@ -87,7 +87,7 @@ class :uc:packageServiceProvider extends ServiceProvider
     $commands = [];
     foreach (glob(__DIR__ . '/Console/Commands/*.php') as $row) {
       // init class path
-      $classPath = '\\' . $vendorName . '\\' . $packageName . '\\Console\\Commands\\';
+      $classPath = '\\:uc:vendor\\:uc:package\\Console\\Commands\\';
 
       // class path with command file class name
       $commandFileClass = str_replace('.php', '', basename($row));
