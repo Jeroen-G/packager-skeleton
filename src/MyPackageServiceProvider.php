@@ -13,6 +13,13 @@ class :uc:packageServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /* Lumen Fix for "Call to undefined function JeroenG\Packager\config_path()" */
+        if (!function_exists('config_path')) {
+            function config_path($path = '') {
+                return app()->basePath().DIRECTORY_SEPARATOR.'config' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+            }
+        }
+
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:vendor');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:vendor');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
