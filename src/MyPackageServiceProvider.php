@@ -11,7 +11,7 @@ class :uc:packageServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:vendor');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:vendor');
@@ -29,7 +29,7 @@ class :uc:packageServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../config/:lc:package.php', ':lc:package');
 
@@ -48,13 +48,13 @@ class :uc:packageServiceProvider extends ServiceProvider
     {
         return [':lc:package'];
     }
-    
+
     /**
      * Console-specific booting.
      *
      * @return void
      */
-    protected function bootForConsole()
+    protected function bootForConsole(): void
     {
         // Publishing the configuration file.
         $this->publishes([
