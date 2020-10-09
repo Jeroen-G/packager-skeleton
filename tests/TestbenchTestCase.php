@@ -6,31 +6,17 @@ use Orchestra\Testbench\TestCase as Testbench;
 
 abstract class TestbenchTestCase extends Testbench
 {
-    /**
-     * Setup before each test.
-     *
-     * @return void
-     */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
 
-    /**
-     * Tear down after each test.
-     * @return  void
-     */
-    public function tearDown()
+    public function tearDown(): void
     {
        parent::tearDown();
     }
 
-    /**
-     * Tell Testbench to use this package.
-     * @param $app
-     * @return array
-     */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [':uc:vendor\:uc:package\:uc:packageServiceProvider'];
     }
