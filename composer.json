@@ -1,5 +1,5 @@
 {
-    "name": ":lc:vendor/:lc:package",
+    "name": ":kc:vendor/:kc:package",
     "description": ":package_description",
     "license": ":license",
     "authors": [
@@ -9,7 +9,7 @@
             "homepage": ":author_homepage"
         }
     ],
-    "homepage": "https://github.com/:lc:vendor/:lc:package",
+    "homepage": "https://github.com/:kc:vendor/:kc:package",
     "keywords": ["Laravel", ":uc:package"],
     "require": {
         "illuminate/support": "~7|~8"

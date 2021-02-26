@@ -13,6 +13,6 @@ class :uc:package extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return ':lc:package';
+        return ':kc:package';
     }
 }

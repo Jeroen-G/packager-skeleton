@@ -12,7 +12,7 @@ This is where your description should go. Take a look at [contributing.md](contr
 Via Composer
 
 ``` bash
-$ composer require :lc:vendor/:lc:package
+$ composer require :kc:vendor/:kc:package
 ```
 
 ## Usage
@@ -44,14 +44,14 @@ If you discover any security related issues, please email :author_email instead 
 
 :license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/:lc:vendor/:lc:package.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/:lc:vendor/:lc:package.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/:lc:vendor/:lc:package/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/:kc:vendor/:kc:package.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/:kc:vendor/:kc:package.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/:kc:vendor/:kc:package/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/:lc:vendor/:lc:package
-[link-downloads]: https://packagist.org/packages/:lc:vendor/:lc:package
-[link-travis]: https://travis-ci.org/:lc:vendor/:lc:package
+[link-packagist]: https://packagist.org/packages/:kc:vendor/:kc:package
+[link-downloads]: https://packagist.org/packages/:kc:vendor/:kc:package
+[link-travis]: https://travis-ci.org/:kc:vendor/:kc:package
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/:lc:vendor
+[link-author]: https://github.com/:kc:vendor
 [link-contributors]: ../../contributors

@@ -13,8 +13,8 @@ class :uc:packageServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:vendor');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:vendor');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':kc:vendor');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', ':kc:vendor');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
@@ -31,10 +31,10 @@ class :uc:packageServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/:lc:package.php', ':lc:package');
+        $this->mergeConfigFrom(__DIR__.'/../config/:kc:package.php', ':kc:package');
 
         // Register the service the package provides.
-        $this->app->singleton(':lc:package', function ($app) {
+        $this->app->singleton(:uc:package::class, function ($app) {
             return new :uc:package;
         });
     }
@@ -46,7 +46,7 @@ class :uc:packageServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return [':lc:package'];
+        return [:uc:package::class];
     }
 
     /**
@@ -58,23 +58,23 @@ class :uc:packageServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/:lc:package.php' => config_path(':lc:package.php'),
-        ], ':lc:package.config');
+            __DIR__.'/../config/:kc:package.php' => config_path(':kc:package.php'),
+        ], ':kc:package.config');
 
         // Publishing the views.
         /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/:lc:vendor'),
-        ], ':lc:package.views');*/
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/:kc:vendor'),
+        ], ':kc:package.views');*/
 
         // Publishing assets.
         /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/:lc:vendor'),
-        ], ':lc:package.views');*/
+            __DIR__.'/../resources/assets' => public_path('vendor/:kc:vendor'),
+        ], ':kc:package.views');*/
 
         // Publishing the translation files.
         /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/:lc:vendor'),
-        ], ':lc:package.views');*/
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/:kc:vendor'),
+        ], ':kc:package.views');*/
 
         // Registering package commands.
         // $this->commands([]);
