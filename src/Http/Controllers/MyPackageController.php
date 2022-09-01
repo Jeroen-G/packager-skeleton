@@ -28,7 +28,7 @@ class :uc:packageController extends BaseController
     {
         // Build wonderful things
 
-        return [];
+        return response()->json([]);
 
     }
 
@@ -44,7 +44,7 @@ class :uc:packageController extends BaseController
     {
         // Build wonderful things
 
-        return [];
+        return response()->json([]);
     }
 
     /**
@@ -58,7 +58,7 @@ class :uc:packageController extends BaseController
     {
         // Build wonderful things
 
-        return [];
+        return response()->json([]);
     }
 
     /**
@@ -73,7 +73,7 @@ class :uc:packageController extends BaseController
     {
         // Build wonderful things
 
-        return [];
+        return response()->json([]);
     }
 
     /**
@@ -88,6 +88,6 @@ class :uc:packageController extends BaseController
     {
         // Build wonderful things
 
-        return [];
+        return response()->json([]);
     }
 }
