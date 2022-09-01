@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use :uc:vendor\:uc:package\Http\Controllers\:uc:packageController;
 
 Route::prefix('api/v1')->group(
