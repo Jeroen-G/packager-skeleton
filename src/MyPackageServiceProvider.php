@@ -3,6 +3,8 @@
 namespace :uc:vendor\:uc:package;
 
 use Illuminate\Support\ServiceProvider;
+use :uc:vendor\:uc:package\Contracts\uc:packageRepositoryInterface;
+use :uc:vendor\:uc:package\Repository\uc:packageRepository;
 
 class :uc:packageServiceProvider extends ServiceProvider
 {
@@ -32,6 +34,8 @@ class :uc:packageServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(__DIR__.'/../config/:lc:package.php', ':lc:package');
+
+        $this->app->singleton(:uc:packageRepositoryInterface::class, :uc:packageRepository::class);
 
         // Register the service the package provides.
         $this->app->singleton(':lc:package', function ($app) {
