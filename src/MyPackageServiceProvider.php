@@ -6,9 +6,19 @@ use Illuminate\Support\ServiceProvider;
 use :uc:vendor\:uc:package\Contracts\:uc:packageRepositoryInterface;
 use :uc:vendor\:uc:package\Repository\:uc:packageRepository;
 use :uc:vendor\:uc:package\Models\:uc:package;
+use :uc:vendor\:uc:package\Subscribers\:uc:packageEventSubscriber;
 
 class :uc:packageServiceProvider extends ServiceProvider
 {
+    /**
+     * The subscriber classes to register.
+     *
+     * @var array
+     */
+    protected $subscribe = [
+        :uc:packageEventSubscriber::class,
+    ];
+
     /**
      * Perform post-registration booting of services.
      *
