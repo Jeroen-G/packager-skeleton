@@ -5,6 +5,7 @@ namespace :uc:vendor\:uc:package;
 use Illuminate\Support\ServiceProvider;
 use :uc:vendor\:uc:package\Contracts\:uc:packageRepositoryInterface;
 use :uc:vendor\:uc:package\Repository\:uc:packageRepository;
+use :uc:vendor\:uc:package\Models\:uc:package;
 
 class :uc:packageServiceProvider extends ServiceProvider
 {
