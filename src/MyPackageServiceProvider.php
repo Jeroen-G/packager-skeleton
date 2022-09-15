@@ -26,6 +26,7 @@ class :uc:packageServiceProvider extends EventServiceProvider
      */
     public function boot(): void
     {
+        parent::boot();
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:vendor');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:vendor');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
@@ -44,6 +45,7 @@ class :uc:packageServiceProvider extends EventServiceProvider
      */
     public function register(): void
     {
+        parent::register();
         $this->mergeConfigFrom(__DIR__.'/../config/:lc:package.php', ':lc:package');
 
         $this->app->singleton(:uc:packageRepositoryInterface::class, :uc:packageRepository::class);
