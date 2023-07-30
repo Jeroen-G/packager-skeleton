@@ -69,12 +69,12 @@ class :uc:packageServiceProvider extends ServiceProvider
         // Publishing assets.
         /*$this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/:lc:vendor'),
-        ], ':lc:package.views');*/
+        ], ':lc:package.assets');*/
 
         // Publishing the translation files.
         /*$this->publishes([
             __DIR__.'/../resources/lang' => resource_path('lang/vendor/:lc:vendor'),
-        ], ':lc:package.views');*/
+        ], ':lc:package.lang');*/
 
         // Registering package commands.
         // $this->commands([]);
