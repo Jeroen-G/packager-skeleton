@@ -2,19 +2,24 @@
 
 namespace :uc:vendor\:uc:package\Http\Controllers;
 
+use Core\Items\Repositories\ItemsRepository;
 use Illuminate\Http\Request;
-use Utility\Common\Http\Controllers\BaseController;
+use Illuminate\Http\JsonResponse;
+use Utility\Common\Http\Controllers\AppsBaseController;
 
-class :uc:packageController extends BaseController
+class :uc:packageController extends AppsBaseController
 {
+
+    private ItemsRepository $itemsRepository;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(ItemsRepository $itemsRepository)
     {
-
+        parent::__construct();
+        $this->itemsRepository = $itemsRepository;
     }
 
     /**
@@ -22,9 +27,9 @@ class :uc:packageController extends BaseController
      *
      * @param Request $request
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
-    public function all(Request $request)
+    public function all(Request $request): JsonResponse
     {
         // Build wonderful things
 
@@ -38,9 +43,9 @@ class :uc:packageController extends BaseController
      * @param int $id
      * @param Request $request
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
-    public function getById(int $id, Request $request)
+    public function getById(int $id, Request $request): JsonResponse
     {
         // Build wonderful things
 
@@ -52,9 +57,9 @@ class :uc:packageController extends BaseController
      *
      * @param Request $request
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
-    public function create(Request $request)
+    public function create(Request $request): JsonResponse
     {
         // Build wonderful things
 
@@ -67,9 +72,9 @@ class :uc:packageController extends BaseController
      * @param int $id
      * @param Request $request
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
-    public function update(int $id, Request $request)
+    public function update(int $id, Request $request): JsonResponse
     {
         // Build wonderful things
 
@@ -82,9 +87,9 @@ class :uc:packageController extends BaseController
      * @param int $id
      * @param Request $request
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
-    public function delete(int $id, Request $request)
+    public function delete(int $id, Request $request): JsonResponse
     {
         // Build wonderful things
 

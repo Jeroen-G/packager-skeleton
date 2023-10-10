@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use :uc:vendor\:uc:package\Http\Controllers\:uc:packageController;
 
-Route::prefix('api/v1')->group(
+Route::prefix('apiv1/internal/apps')->group(
     function () {
         Route::group(['middleware' => ['auth:sanctum', 'subscribed']],
             function () {
