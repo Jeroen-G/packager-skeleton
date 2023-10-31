@@ -11,8 +11,8 @@ This is where your description should go. Take a look at [contributing.md](contr
 
 Via Composer
 
-``` bash
-$ composer require :lc:vendor/:lc:package
+```bash
+composer require :lc:vendor/:lc:package
 ```
 
 ## Usage
@@ -23,8 +23,8 @@ Please see the [changelog](changelog.md) for more information on what has change
 
 ## Testing
 
-``` bash
-$ composer test
+```bash
+composer test
 ```
 
 ## Contributing
